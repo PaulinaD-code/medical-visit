@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand&family=Playpen+Sans&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  <!-- style -->
+  <link rel="stylesheet" href="/calendarExamination.css">
+
+</head>
+<body>
+
+  <div class="main-container">
+    
+    <h1>Kalendarz wizyt lekarskich</h1>
+
+    <div class="calendar-time-css">
+      <div class="date-js date-css"></div>
+      <div class="clock-js clock-css">Godzina</div>
+    </div>
+   
+    <div class="inputs-line">
+      <div class="type-container">
+        <input placeholder="Specjalista" class="doctor-type-input-js doctor-type-input-css">
+        <div class="doctor-types-js doctor-types-css"></div> 
+      </div>
+     
+      <div class="examination-container">
+        <input placeholder="Rodzaj badania / zabiegu" class="examination-js examination-css">
+        <div class="examination-types-js examination-types-css"></div>
+      </div>
+     
+      <input placeholder="Adres" class="examination-address-js examination-address-ccs">
+      <input type="date" class="examination-date-js examination-date-css">
+      <input type="time" class="examination-time-js examination-time-css">
+      <button class="add-examination-js add-examination-css">Dodaj </button>
+
+    </div>
+    
+    <div class="examination-list-js examiantion-list"></div>
+
+  <div class="img-container">
+    <img src="/img/stetoskop.jpg" class="background-img" alt="doctor">
+  </div>
+
+</div>
+
+  <script src="/calendarExamination.js"></script>
+  <script src="/types.js"></script>
+  <script src="/examination.js"></script>
+  <script src="/clock.js"></script>
+</body>
+</html>

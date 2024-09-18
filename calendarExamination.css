@@ -1,0 +1,147 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: /*#dae5fb;*/ /* #9be0ff;*/ #fff;
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  max-width:1100px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+h1{
+  font-size: 35px;
+  text-align: center;
+}
+
+.calendar-time-css{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  font: inherit;
+}
+
+
+.date-css,
+.clock-css{
+  font-size: 20px;
+  margin: 10px 0 20px;
+}
+
+.doctor-type-input-css,
+.examination-css,
+.examination-address-ccs,
+.examination-time-css,
+.examination-date-css{
+  border: none;
+  border-radius: 4px;
+  padding: 10px 7px;
+  font:inherit;
+}
+
+.type-container,
+.examination-container{
+  position: relative;
+}
+
+.doctor-types-css,
+.examination-types-css{
+ display: none;
+}
+
+.doctor-types-css-visible,
+.examination-types-css-visible{
+  display: block;
+  width: 97%;
+  height: 200px;
+  position: absolute;
+  background-color: #fff;
+  overflow: auto;
+  cursor: pointer;
+}
+
+.typeElement,
+.testElement{
+  padding: 5px;
+  transition: .2s ease-in-out;
+}
+
+.typeElement:hover,
+.testElement:hover{
+  background-color: #e0e7fa;
+}
+
+.add-examination-css{
+  background-color: /* #2f6dd0;*/ rgb(232, 17, 17);
+}
+
+.add-examination-js,
+.reset-button{
+  font: inherit;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 7px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.reset-button{
+  background-color: /* #00b2f8;*/ rgb(232, 17, 17);
+}
+
+.examination-line,
+.inputs-line{
+  color: black;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 150px 100px 100px;
+  grid-column-gap: 10px;
+  margin: 10px ;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-img{
+  width: 100%;
+  height: 20%;
+}
+
+.examiantion-list{ 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media(max-width: 770px){
+  .calendar-time-css{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .inputs-line{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .examination-line{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5em;
+  }
+
+}
