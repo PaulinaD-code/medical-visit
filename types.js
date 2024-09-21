@@ -53,11 +53,24 @@ let typesArray = [
 ]
 
 function showTypes(){
-  typeList.classList.toggle('doctor-types-css-visible');
-  showTypeList();
+  if(typeList.className === "doctor-types-js doctor-types-css"){
+      typeList.className = 'doctor-types-js doctor-types-css-visible';
+      showTypeList();
+  }else{
+    typeList.className = "doctor-types-js doctor-types-css"
+  }
 }
 
 typeInput.addEventListener('click', showTypes );
+
+
+window.addEventListener('click', (event)=>{
+  if(event.target.className === "doctor-type-input-js doctor-type-input-css"){
+    showTypeList();
+  }else {
+    typeList.className = 'doctor-types-js doctor-types-css';
+  }
+})
 
 function showTypeList(){
   typeInput.value = '';
@@ -85,12 +98,3 @@ function xoxo(){
 
 let buttonBum = document.querySelector('.btn-bom');
 
-function changeText(){
-  if(buttonBum.innerText ==='click'){
-    buttonBum.innerHTML = 'clicked';
-  }else {
-    buttonBum.innerHTML = 'click';
-  }
-}
-
-buttonBum.addEventListener('click', changeText);
