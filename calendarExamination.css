@@ -122,7 +122,25 @@ h1{
   box-sizing: border-box;
 }
 
+.examination-type{
+  text-transform: uppercase;
+  color: red;
+  font-weight: bolder;
+}
+
 @media(max-width: 770px){
+.main-container{
+    padding: 1em;
+  }
+
+  .examiantion-list{ 
+    padding: 1em;
+  }
+  
+  .date-css{
+    text-align: center;
+  }
+
   .calendar-time-css{
     display: flex;
     align-items: center;
@@ -138,7 +156,8 @@ h1{
 
   .examination-line{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: .5em;
     width: 100%;
     box-sizing: border-box;
     padding: .5em;
