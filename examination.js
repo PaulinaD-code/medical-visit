@@ -2,11 +2,22 @@ let inputExamination = document.querySelector('.examination-js');
 let testContainer = document.querySelector('.examination-types-js');
 
 function showTest(){
-  testContainer.classList.toggle('examination-types-css-visible');
-  renderTestType();
+  if(testContainer.className === "examination-types-js examination-types-css"){
+    testContainer.className = 'examination-types-js examination-types-css-visible';
+    renderTestType();
+   }else{
+       testContainer.className = "examination-types-js examination-types-css";
+   }
 }
 
-inputExamination.addEventListener('click', showTest);
+window.addEventListener('click', (event)=>{
+  if(event.target.className === 'examination-js examination-css'){
+    showTest()
+ 
+  }else{
+    testContainer.className = "examination-types-js examination-types-css";
+  }
+})
 
 let testsListArray = [
   'abdominoplastyka',
