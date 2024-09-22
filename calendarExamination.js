@@ -32,7 +32,7 @@ function renderTest(){
     let html = `
     <div class='examination-line'>
       <div> ${type}, </div>
-      <div class="examination-line"> ${examination}, </div>
+      <div class="examination-type"> ${examination}, </div>
       <div> ${address}, </div>
       <div> ${date}, </div>
       <div> ${time}, </div>
