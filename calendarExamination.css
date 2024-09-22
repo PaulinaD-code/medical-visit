@@ -163,4 +163,14 @@ h1{
     padding: .5em;
   }
 
+  .doctor-type-input-css,
+  .examination-css,
+  .examination-address-ccs,
+  .examination-time-css,
+  .examination-date-css{
+    margin:.3em 0;
+    width: 100%;
+    box-sizing: border-box;
+   }
+
 }
